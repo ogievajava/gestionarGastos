@@ -3,33 +3,40 @@ package programaGastoEmpresa;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-	public class Controller {
+public class Controller {
 
-		public static void Appstarter() {
-		
-		Arrayslist<User> users = new Arrays<String>(User);
+	public static void AppStarting() {
+
+		// scope #2
 		Scanner reader = new Scanner(System.in);
-				
-		while(true) {
-			
-			ArrayList<String> account = new ArrayList<String>();
-			
-			menu();
-			
-				Scanner reader = new Scanner(System.in);
 
-				String userConsolet = reader.nextLine();
-	
-		}
-		
-		public static void menu() {
-			
-			System.out.println("User : " + user);
-			System.out.println("Email: " + email);
-			System.out.println("Password: " + password);
+		String userToCreateAccount = reader.nextLine();
 
+		ArrayList<String> account = new ArrayList<String>();
+
+		account.add(userToCreateAccount);
+
+
+		boolean isValidated = Login.validateAccount(reader, account);
+
+		if (isValidated) {
+
+			Utils.printArray(account);
+
+			account = AccountUpdating.updateUser(reader, account);
+			account = AccountUpdating.updateEmail(reader, account);
+			account = AccountUpdating.updatePasswod(reader, account);
+
+			Utils.printArray(account);
+
+			// fake deleting ...
+			account = AccountDeleting.deleteAccount(account);
+
+			Utils.printArray(account);
+			isValidated = false;
 		}
-		
+
 		reader.close();
 	}
+
 }

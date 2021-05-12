@@ -6,7 +6,7 @@ public class Init {
 		
 		System.out.println("Welcome to gastos generation program");
 		
-			Controller.Appstarter();
+			Controller.AppStarting();
 		
 		System.out.println("Bye Bye and thanks for visit");
 

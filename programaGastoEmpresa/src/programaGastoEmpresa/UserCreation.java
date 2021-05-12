@@ -2,6 +2,8 @@ package programaGastoEmpresa;
 
 public class UserCreation {
 	
+	private static String createPassword;
+
 	public static String createUser(String createUser) {
 	
 
@@ -9,9 +11,9 @@ public class UserCreation {
 		String user = createUser.substring(0, blank);
 
 		return user;
-	}
+		}
 
-	public static String createEmail(String createEmail) {
+		public static String createEmail(String createEmail) {
 	
 
 		int blank = createEmail.indexOf(" ");
@@ -19,19 +21,19 @@ public class UserCreation {
 		String email = createEmail.charAt(0) + surname + "@java.com";
 
 		return email;
-	}
+		}
 
-	public static String createPassword() {
+		public static String createPassword() {
 	
-		String createPassword = null;
+		createPassword = null;
 		
 		int blank = createPassword.indexOf("");
-		String user = createPassword.substring(0, blank);
+		createPassword.substring(0, blank);
 
 		return createPassword();
-	}
+		}
 
-	public static void printUserAccount(String user, String email, String password) {
+		public static void printUserAccount(String user, String email, String password) {
 
 
 		System.out.println("User Account: ");

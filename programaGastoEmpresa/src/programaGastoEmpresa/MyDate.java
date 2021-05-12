@@ -1,7 +1,5 @@
 package programaGastoEmpresa;
 
-public class User {
-	
+public class MyDate {
 
 }
-
