@@ -1,45 +1,27 @@
 package programaGastoEmpresa;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class UserCreation {
-	
-	public static String createUser(String createUser) {
-	
+	public static void createuser(Scanner reader, ArrayList<User> users) {
+		// public static void createuser(Scanner reader) {
 
-		int blank = createUser.indexOf(" ");
-		String user = createUser.substring(0, blank);
+		User newUser = new User();
 
-		return user;
-	}
+		System.out.println("Tell me your name:");
+		newUser.setName(reader.nextLine());
 
-	public static String createEmail(String createEmail) {
-	
+		System.out.println("Tell me your surname:");
+		newUser.setSurname(reader.nextLine());
 
-		int blank = createEmail.indexOf(" ");
-		String surname = createEmail.substring(blank + 1, createEmail.length());
-		String email = createEmail.charAt(0) + surname + "@java.com";
+		System.out.println("Tell me your age:");
+		newUser.setAge(reader.nextInt());
 
-		return email;
-	}
+		// to-do methods create user and password
 
-	public static String createPassword() {
-	
-		String createPassword = null;
-		
-		int blank = createPassword.indexOf("");
-		String user = createPassword.substring(0, blank);
-
-		return createPassword();
-	}
-
-	public static void printUserAccount(String user, String email, String password) {
-
-
-		System.out.println("User Account: ");
-		System.out.println("User : " + user);
-		System.out.println("Email: " + email);
-		System.out.println("Password: " + password);
+		users.add(newUser);
 
 	}
 
-	
 }

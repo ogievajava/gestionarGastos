@@ -1,35 +1,38 @@
 package programaGastoEmpresa;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 	public class Controller {
-
-		public static void Appstarter() {
 		
-		Arrayslist<User> users = new Arrays<String>(User);
-		Scanner reader = new Scanner(System.in);
-				
-		while(true) {
-			
-			ArrayList<String> account = new ArrayList<String>();
-			
-			menu();
-			
-				Scanner reader = new Scanner(System.in);
+		public static void AppStarting() {
 
-				String userConsolet = reader.nextLine();
-	
+		while (true) {
+			
+			Scanner reader = new Scanner(System.in);
+			System.out.println("Tell me your user name(\"quit\" to exit):");
+			String userName = reader.nextLine();
+			
+			if(userName.equals("quit")) break;
+			
+			System.out.println("Tell me your type of user:");
+			String userType = reader.nextLine();
+			
+			System.out.println("Tell me your amount of your buy:");
+		    String userBuy = reader.nextLine();
+			
+			System.out.println("\nUser:");
+			System.out.println("User Name: " + userName);
+			System.out.println("User Type: " + userType);
+			System.out.println("User Buy: " + userBuy);
+			
+			
+			
 		}
-		
-		public static void menu() {
 			
-			System.out.println("User : " + user);
-			System.out.println("Email: " + email);
-			System.out.println("Password: " + password);
-
-		}
-		
-		reader.close();
 	}
+
+		public static void executeController() {
+			// TODO Auto-generated method stub
+			
+		}
 }
