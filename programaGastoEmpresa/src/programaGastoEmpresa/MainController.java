@@ -1,5 +1,6 @@
 package programaGastoEmpresa;
 
-public class MainController {
-
-}
+	public class MainController {
+		
+	
+	}

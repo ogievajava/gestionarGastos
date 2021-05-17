@@ -25,7 +25,7 @@ package programaGastoEmpresa;
 				passwordConsole = reader.next();
 
 				if (userConsole.equals(user) && passwordConsole.equals(password)) {
-					System.out.println("Access Granted! Welcome!");
+					System.out.println("Access Granted! Welcome!"); //
 					return true;
 
 				} else if (userConsole.equals(user)) {
