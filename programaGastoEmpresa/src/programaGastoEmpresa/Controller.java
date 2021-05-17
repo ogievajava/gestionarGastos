@@ -12,7 +12,7 @@ import java.util.Scanner;
 			System.out.println("Tell me your user name(\"quit\" to exit):");
 			String userName = reader.nextLine();
 			
-			if(userName.equals("quit")) break;
+			if(userName.equals(" ")) break;
 			
 			System.out.println("Tell me your type of user:");
 			String userType = reader.nextLine();

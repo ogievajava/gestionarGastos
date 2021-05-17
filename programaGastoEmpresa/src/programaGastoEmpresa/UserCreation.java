@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class UserCreation {
 	public static void createuser(Scanner reader, ArrayList<User> users) {
-		// public static void createuser(Scanner reader) {
+		// public static void createUser(Scanner reader) {
 
 		User newUser = new User();
 
@@ -22,6 +22,5 @@ public class UserCreation {
 
 		users.add(newUser);
 
-	}
-
+	} //...
 }

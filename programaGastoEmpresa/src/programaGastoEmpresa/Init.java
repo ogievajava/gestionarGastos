@@ -8,9 +8,9 @@ public class Init {
 		
 			//users.executeUsers();
 		
-			Controller.executeController();
+			Controller.AppStarting();
 		//
-			//
+		
 		System.out.println("Bye Bye and thanks for visit");
 
 	}
