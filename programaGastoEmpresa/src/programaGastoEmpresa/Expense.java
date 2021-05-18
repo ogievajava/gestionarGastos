@@ -48,6 +48,6 @@ public class Expense {
 			return "Expense [nombre=" + nombre + ", expense=" + expense + ", date=" + date + "]";
 		}
 		
-	
+	//commit push
 }
 
