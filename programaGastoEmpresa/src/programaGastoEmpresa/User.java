@@ -1,36 +1,31 @@
 package programaGastoEmpresa;
 
 public class User {
-
+	
 		public String name;
-		public String surname;
 		public int age;
-		public String email;
 		public String userName;
 		public String password;
-
-		public User(String name, String surname, int age, String email, String userName, String password) {
-			super();
-			this.name = name;
-			this.surname = surname;
-			this.age = age;
-			this.email = email;
-			this.userName = userName;
-			this.password = password;
-		}
-
-		public User(String name, String surname, int age, String userName, String password) {
-			super();
-			this.name = name;
-			this.surname = surname;
-			this.age = age;
-			this.userName = userName;
-			this.password = password;
-		}
-
+		public String email;
+		
+		
+		// Constructors
+		
 		public User() {
-			// TODO Auto-generated constructor stub
+			
 		}
+		
+		public User(String name, int age, String userName, String password, String email) {
+			
+			this.name = name;
+			this.age = age;
+			this.userName = userName;
+			this.password = password;
+			this.email = email;
+		}
+		
+		
+		//Getters and setters
 
 		public String getName() {
 			return name;
@@ -40,28 +35,12 @@ public class User {
 			this.name = name;
 		}
 
-		public String getSurname() {
-			return surname;
-		}
-
-		public void setSurname(String surname) {
-			this.surname = surname;
-		}
-
 		public int getAge() {
 			return age;
 		}
 
 		public void setAge(int age) {
 			this.age = age;
-		}
-
-		public String getEmail() {
-			return email;
-		}
-
-		public void setEmail(String email) {
-			this.email = email;
 		}
 
 		public String getUserName() {
@@ -80,12 +59,20 @@ public class User {
 			this.password = password;
 		}
 
-		@Override
-		public String toString() {
-			return "User [name=" + name + ", surname=" + surname + ", age=" + age + ", email=" + email + ", userName="
-					+ userName + ", password=" + password + "]";
+		public String getEmail() {
+			return email;
 		}
 
-}
+		public void setEmail(String email) {
+			this.email = email;
+		}
 
+		@Override
+		public String toString() {
+			return "User (name=" + name + ", age=" + age + ", userName=" + userName + ", password=" + password + ", email="
+					+ email + ")";
+		}
+	
+
+	}
 

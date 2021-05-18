@@ -12,9 +12,6 @@ public class UserCreation {
 		System.out.println("Tell me your name:");
 		newUser.setName(reader.nextLine());
 
-		System.out.println("Tell me your surname:");
-		newUser.setSurname(reader.nextLine());
-
 		System.out.println("Tell me your age:");
 		newUser.setAge(reader.nextInt());
 
@@ -22,5 +19,5 @@ public class UserCreation {
 
 		users.add(newUser);
 
-	} //...
+	} 
 }
