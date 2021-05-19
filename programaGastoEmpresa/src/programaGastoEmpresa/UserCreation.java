@@ -1,47 +1,40 @@
 package programaGastoEmpresa;
 
+import java.util.Scanner;
+
+
+
 public class UserCreation {
 	
-	private static String createPassword;
-
-	public static String createUser(String createUser) {
 	
+		public static void createUser() {
+			
+			Scanner reader = new Scanner (System.in);
+			
+			User newUser = new User();
 
-		int blank = createUser.indexOf(" ");
-		String user = createUser.substring(0, blank);
+			System.out.println("Tell me your name:");
+			newUser.setName(reader.nextLine());
 
-		return user;
+			System.out.println("Tell me your username:");
+			newUser.setUserName(reader.nextLine());
+
+			System.out.println("Tell me your age:");
+			newUser.setAge(reader.nextInt());
+			
+			System.out.println("Tell me your password:");
+			newUser.setPassword(reader.next());
+			
+			System.out.println("Tell me your email:");
+			newUser.setEmail(reader.next());
+
+			
+			System.out.println(newUser.toString());
+
+			
+
 		}
-
-		public static String createEmail(String createEmail) {
-	
-
-		int blank = createEmail.indexOf(" ");
-		String surname = createEmail.substring(blank + 1, createEmail.length());
-		String email = createEmail.charAt(0) + surname + "@java.com";
-
-		return email;
-		}
-
-		public static String createPassword() {
-	
-		createPassword = null;
-		
-		int blank = createPassword.indexOf("");
-		createPassword.substring(0, blank);
-
-		return createPassword();
-		}
-
-		public static void printUserAccount(String user, String email, String password) {
-
-
-		System.out.println("User Account: ");
-		System.out.println("User : " + user);
-		System.out.println("Email: " + email);
-		System.out.println("Password: " + password);
 
 	}
-
 	
-}
+
