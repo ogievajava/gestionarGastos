@@ -10,7 +10,7 @@ package programaGastoEmpresa;
 					
 					
 					Scanner reader = new Scanner (System.in);
-					System.out.println("Introdueix el Usuari");
+					System.out.println("Introdueix el Username");
 					userName = reader.nextLine();
 					
 					System.out.println("Introdueix el password");

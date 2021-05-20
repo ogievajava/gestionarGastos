@@ -7,12 +7,10 @@ import java.util.Scanner;
 public class UserCreation {
 	
 	
-		public static void createUser() {
+		public static void createUser(User newUser) {
 			
 			Scanner reader = new Scanner (System.in);
 			
-			User newUser = new User();
-
 			System.out.println("Tell me your name:");
 			newUser.setName(reader.nextLine());
 
