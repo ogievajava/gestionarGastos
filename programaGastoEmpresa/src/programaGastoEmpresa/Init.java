@@ -6,9 +6,8 @@ public class Init {
 		
 		System.out.println("Welcome to gastos generation program");
 		
-			//Controller.AppStarting();
-			LoginV1.validateAccount();
-		
+			Controller.AppStarting();
+	
 		System.out.println("Bye Bye and thanks for visit");
 
 	}
