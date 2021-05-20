@@ -3,45 +3,25 @@ package programaGastoEmpresa;
 import java.util.Scanner;
 
 public class Login {
-	
-	
-		public static boolean validateAccount(Scanner reader, String user, String password) {
-			//System.out.println(user);
-			//System.out.println(password);
 			
-			int count = 1;
-					String userConsole;
-					String passwordConsole;
-					System.out.println("\nLogin:");
-					
-			do {
+			public static boolean validateUser(String user, String password) {
+				String userName;
+				String userPass;
 				
-				System.out.println("\nEnter Username: ");
-				userConsole = reader.next();
 				
-				System.out.println("\nEnter Username: ");
-				passwordConsole = reader.next();
+				Scanner reader = new Scanner (System.in);
+				System.out.println("Introdueix el Username");
+				userName = reader.nextLine();
 				
-				if (userConsole.equals(user) && passwordConsole.equals(password)){
-					
-				} else if (passwordConsole.equals(password)) {
-				       System.out.println("Invalid Password!");
-				       
-				} else if (passwordConsole.equals(password)) {
-				       System.out.println("Invalid Username!");
-				       
-				} else {
-					System.out.println("Invalid Username & Password!");
-				}
+				System.out.println("Introdueix el password");
+				userPass = reader.nextLine();
 				
-	            if (count == 4) System.out.println("Account blocked!");
-				
-			    } while (count < 4);
+					if(userName.equals(user) && userPass.equals(password)) {
+						System.out.println("You are in");
+						return true;
+					}
+					System.out.println("You are out");			
+					return false; 
+			}
 			
-			
-
-			   return false;
-		
-	}
-
-}
+		}	
