@@ -1,39 +1,26 @@
 package programaGastoEmpresa;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class LoginV1 {
-	
-		public static boolean loginRequest (Scanner reader, ArrayList<String> account) {
 
-		// variables 
-		//as userConsole Name and password
-		//condition while user to choose between createAccount and or login
-		// send userName and password to method createAccount and loginControler
-		
-			String user = account.get(1);
-			String password = account.get(3);
-			
-			
-			int count = 1;
-			String userConsoleName;
-			String userConsolePassword;
-			System.out.println("\nLogin:");
+	public static boolean validateUser(String user, String password) {
+		String userName;
+		String userPass;
 
-			System.out.println("\nEnter User Name : ");
-			userConsoleName = reader.next();
-		
-			System.out.println("\nEnter Password : ");
-			userConsolePassword = reader.next();
-		
-			while (count < 4){
-			
-			
+		Scanner reader = new Scanner(System.in);
+		System.out.println("Introdueix el Usuari");
+		userName = reader.nextLine();
+
+		System.out.println("Introdueix el password");
+		userPass = reader.nextLine();
+
+		if (userName.equals(user) && userPass.equals(password)) {
+			System.out.println("You are in");
+			return true;
 		}
-		
+		System.out.println("You are out");
 		return false;
-		}
-		
-		
+	}
+
 }
