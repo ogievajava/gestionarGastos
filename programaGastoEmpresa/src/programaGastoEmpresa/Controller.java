@@ -1,42 +1,38 @@
 package programaGastoEmpresa;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Controller {
 
 	public static void AppStarting() {
 
-		// scope #2
 		Scanner reader = new Scanner(System.in);
 
-		String userToCreateAccount = reader.nextLine();
+		User toCreate = new User();
 
-		ArrayList<String> account = new ArrayList<String>();
+		while (true) {
 
-		account.add(userToCreateAccount);
+			Menu.mainMenu();
 
+			int keyboard = reader.nextInt();
 
-		boolean isValidated = Login.validateAccount(reader, account);
+			switch (keyboard) {
 
-		if (isValidated) {
+			case 1:
+				UserCreation.createUser(toCreate);
+				break;
 
-			Utils.printArray(account);
+			case 2:
+				boolean userValidate = Login.validateUser(toCreate.getUserName(), toCreate.getPassword());
+				System.out.println(toCreate.getName() + " validate: " + userValidate);
+				break;
 
-			account = AccountUpdating.updateUser(reader, account);
-			account = AccountUpdating.updateEmail(reader, account);
-			account = AccountUpdating.updatePasswod(reader, account);
+			default:
+				System.out.println("Please select an option");
 
-			Utils.printArray(account);
+			}
 
-			// fake deleting ...
-			account = AccountDeleting.deleteAccount(account);
-
-			Utils.printArray(account);
-			isValidated = false;
 		}
 
-		reader.close();
 	}
-
 }
