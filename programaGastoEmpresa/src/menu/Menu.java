@@ -1,4 +1,4 @@
-package programaGastoEmpresa;
+package menu;
 
 public class Menu {
 

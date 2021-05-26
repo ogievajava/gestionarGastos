@@ -1,6 +1,8 @@
-package programaGastoEmpresa;
+package usercreation;
 
 import java.util.Scanner;
+
+import object.User;
 
 
 
