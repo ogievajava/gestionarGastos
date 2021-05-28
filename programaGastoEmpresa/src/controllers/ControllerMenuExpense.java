@@ -20,7 +20,7 @@ public class ControllerMenuExpense {
 		
 			Menu.mainMenu();
 			
-			int keyboard = reader.nextInt();
+			int keyboard = reader.nextInt(); // no esta hecho
 			
 			switch (keyboard) {
 			
