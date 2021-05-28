@@ -2,7 +2,7 @@ package menu;
 
 public class MenuExpense {
 
-public static void mainMenu() {
+	public static void menuExpense() {
 		
 		System.out.println("For modify expenses ");
 		
@@ -12,7 +12,7 @@ public static void mainMenu() {
 		
 		System.out.println("Save the changes ");
 		
-		
+		System.out.println("Search"); // _buscar_option HaspMap with date
 	}
 	
 }

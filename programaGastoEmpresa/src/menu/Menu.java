@@ -14,15 +14,14 @@ public static void mainMenu() {
 		
 		System.out.println("2-Login to access your manager ");
 		
-		//System.out.println("4-Quit if you've completed your appointments");
 		
-		//System.out.println("Option:");
 	}
 	
-	public static void loginMenu() {
-	}
+	//public static void menuLanguatge() {
 	
-	public static void expensesMenu() {
-	}
 	
-}
+	
+       
+	}
+
+	
