@@ -27,7 +27,7 @@ public class User {
 		this.expenses = expenses;
 	}
 	
-	
+	//
 	//Getters and setters
 
 	public String getName() {
