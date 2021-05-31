@@ -25,16 +25,7 @@ public class Expense {
 	
 	
 	// Methods 
-	
-	public void addExpense(String title, String description, double qty) {
-		
-		Expense newExpense = new Expense(title, description, qty);
-		
-		Expenses.put(newExpense);
-		
-		
-		
-	}
+
 
 	
 	

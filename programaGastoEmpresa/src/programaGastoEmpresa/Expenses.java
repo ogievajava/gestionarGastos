@@ -24,6 +24,8 @@ public class Expenses {
 	}
 	
 	
+	
+	
 	public HashMap<String, Expense> getExpenses() {
 		return expenses;
 	}
