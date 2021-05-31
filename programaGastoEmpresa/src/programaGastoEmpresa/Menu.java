@@ -22,9 +22,8 @@ public class Menu {
 	public static void loginMenu() {
 	}
 	
-	public static void expensesMenu() {
+	public static void expenseMenu() {
 	}
 	
 	
-
 }
