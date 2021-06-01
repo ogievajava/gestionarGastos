@@ -23,6 +23,7 @@ public class MenuExpense {
 		//System.out.println("4-Quit if you've completed your appointments");
 		
 		System.out.println("Option:");
+		//
 	}
 	
 
