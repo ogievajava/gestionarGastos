@@ -1,16 +1,10 @@
 package programaGastoEmpresa;
 
-
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Scanner;
-//import model.Expense;
-//import model.User;
 
 public class MenuExpense {
 
-	public static void createExpense(Scanner reader, User userValidated) {
+	public static void addExpense(Scanner reader, User userValidated) {
 		 
 		System.out.println("1-Do you want to add something in Expense?");
 		
@@ -22,7 +16,7 @@ public class MenuExpense {
 		
 		//System.out.println("4-Quit if you've completed your appointments");
 		
-		System.out.println("Option:");
+		System.out.println("Search"); //Option HashMap to Date.
 		//
 	}
 	
