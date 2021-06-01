@@ -1,5 +1,7 @@
 package programaGastoEmpresa;
 
+import java.util.ArrayList;
+
 public class User {
 
 		public String name;
@@ -110,6 +112,16 @@ public class User {
 		public String toString() {
 			return "User [name=" + name + ", surname=" + surname + ", age=" + age + ", email=" + email + ", userName="
 					+ userName + ", password=" + password + "]";
+		}
+
+		public ArrayList<Expense> getExpenses() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		public void update(int count, Expense expense) {
+			// TODO Auto-generated method stub
+			
 		}
 
 	}

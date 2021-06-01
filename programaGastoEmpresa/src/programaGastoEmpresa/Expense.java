@@ -1,5 +1,7 @@
 package programaGastoEmpresa;
 
+import java.util.Date;
+
 public class Expense {
 
 	String nombre = "";
@@ -33,7 +35,7 @@ public class Expense {
 		}
 	
 	
-		public MyDate getDate() {
+		public Date getDate() {
 			return date;
 		}
 	
@@ -46,6 +48,21 @@ public class Expense {
 		@Override
 		public String toString() {
 			return "Expense [nombre=" + nombre + ", expense=" + expense + ", date=" + date + "]";
+		}
+
+		public Object getName() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		public String getValue() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		public void setValue(double valueExpense) {
+			// TODO Auto-generated method stub
+			
 		}
 		
 	//commit push
