@@ -5,15 +5,14 @@ import java.util.ArrayList;
 //Clase Users - Crearemos un Array de objetos User, Parquing de "User";
 
 public class Users {
+	
+	static ArrayList<User> users = null;
+	
+	public static void usersList(User user) {
+		
+		users = new ArrayList<User>();
 
-	public static void usersList(String name, String password, String email, String expense) {
-
-		ArrayList<String> user = new ArrayList<String>();
-
-		user.add(name);
-		user.add(password);
-		user.add(email);
-		user.add(expense);
+		users.add(user);
 
 	}
 
