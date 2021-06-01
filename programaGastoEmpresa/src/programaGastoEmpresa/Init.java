@@ -11,7 +11,7 @@ public class Init {
 	  System.out.println("Welcome to gastos generation program");
 	  
 	  Controller.AppStarting();
-	  ControllerMenuExpense.AppStarting();
+	  ControllerMenuExpense.StartExpense();
 	  
 	  System.out.println("Bye Bye and thanks for visit");
 	  

@@ -3,26 +3,21 @@ package object;
 public class Expense {
 	
 	public String name;
-	public String description;
-	public double value;     //quantity
-	public int date;     // System.out.println(year+":"+with2digits+":"+day); // DD:MM:YYYY. 
-	
+	public double price;
+	public int date; //crear clase MyDate_System.out.println(year+":"+with2digits+":"+day); // DD:MM:YYYY. 
+	     
+	    
 	
 	// Constructors
-	
-	public Expense(String name, String description, double value, int date) {
+	public Expense() {}
+
+
+	public Expense(String name, double price, int date) {
 		super();
 		this.name = name;
-		this.description = description;
-		this.value = value;
+		this.price = price;
 		this.date = date;
-	
-	}
-   public Expense(String expenseName, double valueExpense, int todayDate) {
 		
-		this.name = expenseName;
-		this.value = valueExpense;
-		this.date = todayDate;
 	}
 
 	//Getters and setters
@@ -37,23 +32,13 @@ public class Expense {
 	}
 
 
-	public String getDescription() {
-		return description;
+	public double getPrice() {
+		return price;
 	}
 
 
-	public void setDescription(String description) {
-		this.description = description;
-	}
-
-
-	public double getValue() {
-		return value;
-	}
-
-
-	public void setValue(double value) {
-		this.value = value;
+	public void setPrice(double price) {
+		this.price = price;
 	}
 
 
@@ -65,12 +50,19 @@ public class Expense {
 	public void setDate(int date) {
 		this.date = date;
 	}
-	
+
+
+
+	// toString
 	
 	@Override
 	public String toString() {
-		return "Expense [name=" + name + ", description=" + description + ", value=" + value + ", date=" + date + "]";
+		return "Expense [name=" + name + ", price=" + price + ", date=" + date + "]";
 	}
 
+  }
 
-}
+	
+	
+	
+	

@@ -1,54 +1,43 @@
 package controllers;
 
 import java.util.Scanner;
-
-import menu.Menu;
-import object.User;
-import usercreation.Login;
-import usercreation.UserCreation;
+//import menu.MenuExpense;
+//import object.Expense;
+//import object.Expenses;
 
 public class ControllerMenuExpense {
 
-	
-	public static void AppStarting() {
 		
+	public static void StartExpense() {
+			
 		Scanner reader = new Scanner(System.in);
-		
-		User toCreate = new User();
-		
-		while(true) {
-		
-			Menu.mainMenu();
 			
-			int keyboard = reader.nextInt(); // no esta hecho
+		Expense toCreate = new Expense();
 			
-			switch (keyboard) {
+			while(true) {
 			
-			case 1:                                  //System.out.println("1-Create your user ");
-				UserCreation.createUser(toCreate); 
-				break;
-			
-			case 2:                                   //System.out.println("2-Login to access your manager ");
-				boolean userValidate = Login.validateUser( toCreate.getUserName(), toCreate.getPassword());
-				System.out.println(toCreate.getName() + " validate: " + userValidate);
-				break;
+				MenuExpense.menuExpensesToPrint();
 				
-			default:
-			    System.out.println("Please select an option"); //Shif_otros opciones
 				
+				int keyboard = reader.nextInt();
+				
+				switch (keyboard) {
+				
+				case 1: 
+					Expenses.addExpense(toCreate);
+					break;
+				
+				case 2:
+					boolean ExpenseValidate = Login.validateExpense( toCreate.getExpenseName(), toCreate.getPassword());
+					System.out.println(toCreate.getName() + " validate: " + userValidate);
+					break;
+					
+				default:
+				    System.out.println(" please select a management ");
+					
+				}
 				
 			}
-			
 		}
-			
-	}
 }
-//System.out.println("Hi I'm your company manager to help you");
-//
-//System.out.println("_ _ _ _ _ _ _ \n");
-//
-//System.out.println("We can help you easily and safely. Create your account in two steps");
-//
-
-//
 

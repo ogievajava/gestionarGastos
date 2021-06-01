@@ -43,12 +43,4 @@ public class Controller {
 			
 	}
 }
-//System.out.println("Hi I'm your company manager to help you");
-//
-//System.out.println("_ _ _ _ _ _ _ \n");
-//
-//System.out.println("We can help you easily and safely. Create your account in two steps");
-//
-
-//
 

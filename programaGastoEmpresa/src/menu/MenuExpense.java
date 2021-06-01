@@ -2,19 +2,21 @@ package menu;
 
 public class MenuExpense {
 
-	public static void menuExpense() {
+	public static void menuExpensesToPrint() {
 		
-		System.out.println("For modify expenses ");
+        System.out.println("1-Do you want to add something in Expense?");
 		
-		System.out.println("Add expenses");
+		System.out.println("_ _ _ _ _ _ _ \n");
 		
-		System.out.println("Suspend expenses");
+		System.out.println("2-You can modify something if you need");
 		
-		System.out.println("Save the changes ");
+		System.out.println("3-And delete if is necesary anytime ");
 		
-		System.out.println("Search"); // _buscar_option HaspMap with date
-	}
+		//System.out.println("4-Quit if you've completed your appointments");
+		
+		System.out.println("Search"); //Option HashMap to Date.
 	
+   }
 }
 
 	
