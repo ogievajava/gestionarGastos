@@ -4,7 +4,7 @@ public class Expense {
 	
 	public String name;
 	public double price;
-	public int date; //crear clase MyDate_System.out.println(year+":"+with2digits+":"+day); // DD:MM:YYYY. 
+	public String date; //crear clase MyDate_System.out.println(year+":"+with2digits+":"+day); // DD:MM:YYYY. 
 	     
 	    
 	
@@ -12,8 +12,8 @@ public class Expense {
 	public Expense() {}
 
 
-	public Expense(String name, double price, int date) {
-		super();
+	public Expense(String name, double price, String date) {
+		
 		this.name = name;
 		this.price = price;
 		this.date = date;
@@ -42,12 +42,12 @@ public class Expense {
 	}
 
 
-	public int getDate() {
+	public String getDate() {
 		return date;
 	}
 
 
-	public void setDate(int date) {
+	public void setDate(String date) {
 		this.date = date;
 	}
 

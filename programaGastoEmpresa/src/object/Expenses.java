@@ -15,7 +15,7 @@ public class Expenses {
 	}
 
 
-	public void addExpense(String name, int price, int date) {
+	public void addExpense(String name, Double price, String date) {
 		
 		Expense newExpense = new Expense(name, price, date);
 		counter++;

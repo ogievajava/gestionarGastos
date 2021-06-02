@@ -2,11 +2,13 @@ package expense;
 
 import java.util.Scanner;
 
-import object.User;
+import object.Expense;
+
+
 
 public class ExpenseCreation {
 
-	public static void createUser(User newExpense) {
+	public static void ExpenseCreation (Expense newExpense) {
 		
 		Scanner reader = new Scanner (System.in);
 		
@@ -14,10 +16,10 @@ public class ExpenseCreation {
 		newExpense.setName(reader.nextLine());
 
 		System.out.println("Price:");
-		newExpense.setUserName(reader.nextLine());
+		newExpense.setPrice(reader.nextDouble());
 
 		System.out.println("Date:"); 
-		newExpense.setAge(reader.nextInt());	
+		newExpense.setDate(reader.nextLine());	
 		
 		System.out.println(newExpense.toString());
        
