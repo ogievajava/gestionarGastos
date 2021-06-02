@@ -24,9 +24,6 @@ public class Expenses {
 		
 	}
 	
-	
-	
-	
 	public HashMap<String, Expense> getExpenses() {
 		return expenses;
 	}
@@ -35,10 +32,5 @@ public class Expenses {
 	public void setExpenses(HashMap<String, Expense> expenses) {
 		this.expenses = expenses;
 	}
-	
-	
-	//
-	
-	
 
 }

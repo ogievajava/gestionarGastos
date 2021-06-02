@@ -1,7 +1,7 @@
 package programaGastoEmpresa;
 
 import controllers.Controller;
-import controllers.ControllerMenuExpense;
+//import controllers.ControllerMenuExpense;
 
 public class Init {
 
@@ -11,7 +11,7 @@ public class Init {
 	  System.out.println("Welcome to gastos generation program");
 	  
 	  Controller.AppStarting();
-	  ControllerMenuExpense.StartExpense();
+	  //ControllerMenuExpense.StartExpense();
 	  
 	  System.out.println("Bye Bye and thanks for visit");
 	  
