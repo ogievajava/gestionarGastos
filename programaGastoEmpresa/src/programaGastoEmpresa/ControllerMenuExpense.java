@@ -9,7 +9,7 @@ public class ControllerMenuExpense {
 			
 		Scanner reader = new Scanner(System.in);
 			
-		Expense toCreate = new Expense();
+	
 			
 			while(true) {
 			
@@ -19,8 +19,16 @@ public class ControllerMenuExpense {
 				
 				switch (keyboard) {
 				
-				case 1: 
-					//Expenses.addExpense(toCreate);
+				case 1:
+					
+					Expense toCreate = new Expense();
+					toCreate  =ExpenseCreation.expenseCreation(toCreate);
+					
+					User.expenses.put(toCreate.getName(), toCreate);
+					
+					
+					
+					
 					break;
 				
 				case 2:

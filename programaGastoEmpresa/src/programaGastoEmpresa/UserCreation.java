@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class UserCreation {
 	
 	
-		public static void createUser(User newUser) {
+		public static User createUser(User newUser) {
 			
 			Scanner reader = new Scanner (System.in);
 			
@@ -29,7 +29,7 @@ public class UserCreation {
 			
 			System.out.println(newUser.toString());
 
-			
+			return newUser;
 
 		}
 

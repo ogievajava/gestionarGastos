@@ -8,7 +8,7 @@ public class User {
 	public String userName;
 	public String password;
 	public String email;
-	public HashMap<String, Expense> expenses;
+	public static HashMap<String, Expense> expenses;
 	
 	
 	// Constructors

@@ -4,66 +4,81 @@ public class Expense {
 	
 	// Attributes
 	
-	public String title;
-	public String description;
-	public double qty;
+	public String name;
+	public double price;
+	public String date;
 	
 	
 	// Constructors
 	
-	public Expense() {
+	
+	
+	
+	public Expense () {
 		
 	}
 	
-	
-	public Expense(String title, String description, double qty) {
+	public Expense(String name, String date, double price) {
 		
-		this.title = title;
-		this.description = description;
-		this.qty = qty;
-	}
-	
-	
-	// Methods 
-
-
-	
-	
-	
-	
-	// Getters and Setters
-
-	public String getTitle() {
-		return title;
+		this.name = name;
+		this.price = price;
+		this.date = date;
 	}
 
-	public void setTitle(String title) {
-		this.title = title;
+
+
+
+	public String getName() {
+		return name;
 	}
 
-	public String getDescription() {
-		return description;
+
+
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public void setDescription(String description) {
-		this.description = description;
+
+
+
+	public double getPrice() {
+		return price;
 	}
 
-	public double getQty() {
-		return qty;
+
+
+
+	public void setPrice(double price) {
+		this.price = price;
 	}
 
-	public void setQty(double qty) {
-		this.qty = qty;
+
+
+
+	public String getDate() {
+		return date;
 	}
+
+
+
+
+	public void setDate(String date) {
+		this.date = date;
+	}
+
+
+
 
 	@Override
 	public String toString() {
-		return "Expense [title=" + title + ", description=" + description + ", qty=" + qty + "]";
+		return "Expense [name=" + name + ", price=" + price + ", date=" + date + "]";
 	}
-	
-	
-	
+
+
+
+
 	
 
+	
 }

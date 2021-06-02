@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class MenuExpense {
 
 	public static void menuExpensesToPrint() {
-		 
-		System.out.println("1-Do you want to add something in Expense?");
 		
 		System.out.println("_ _ _ _ _ _ _ \n");
+		 
+		System.out.println("1-Do you want to add something in Expense?");
 		
 		System.out.println("2-You can modify something if you need");
 		
