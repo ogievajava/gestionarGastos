@@ -15,6 +15,7 @@ public class User {
 	
 	public User() {
 		
+		this.expenses = new HashMap<String, Expense>();
 	}
 	
 	public User(String name, int age, String userName, String password, String email, HashMap<String, Expense>expenses) {
