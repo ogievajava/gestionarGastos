@@ -5,11 +5,9 @@ import java.util.Scanner;
 public class ControllerMenuExpense {
 
 		
-	public static void startExpense() {
+	public static void startExpense(User userValidate) {
 			
 		Scanner reader = new Scanner(System.in);
-			
-	
 			
 			while(true) {
 			
@@ -21,10 +19,18 @@ public class ControllerMenuExpense {
 				
 				case 1:
 					
-					Expense toCreate = new Expense();
-					toCreate  =ExpenseCreation.expenseCreation(toCreate);
+					//User userToCreate = new User();
+				
+					//userToCreate = UserCreation.createUser(userToCreate);
 					
-					User.expenses.put(toCreate.getName(), toCreate);
+					Expense toCreateExpense = new Expense();
+					toCreateExpense  = ExpenseCreation.expenseCreation(toCreateExpense);
+					
+					System.out.println(userValidate);
+					System.out.println(toCreateExpense);
+					System.out.println(userValidate.expenses);
+					
+					userValidate.expenses.put(toCreateExpense.getName(), toCreateExpense);
 					
 					
 					

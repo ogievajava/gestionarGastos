@@ -1,7 +1,5 @@
 package programaGastoEmpresa;
 
-import java.util.Scanner;
-
 public class MenuExpense {
 
 	public static void menuExpensesToPrint() {

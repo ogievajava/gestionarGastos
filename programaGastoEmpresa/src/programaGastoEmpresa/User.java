@@ -8,7 +8,7 @@ public class User {
 	public String userName;
 	public String password;
 	public String email;
-	public static HashMap<String, Expense> expenses;
+	public HashMap<String, Expense> expenses;
 	
 	
 	// Constructors
@@ -24,7 +24,7 @@ public class User {
 		this.userName = userName;
 		this.password = password;
 		this.email = email;
-		this.expenses = expenses;
+		this.expenses = new HashMap<String, Expense>();
 	}
 	
 	//
@@ -70,14 +70,21 @@ public class User {
 		this.email = email;
 	}
 	
-	
-	// override
+
+	public  HashMap<String, Expense> getExpenses() {
+		return expenses;
+	}
+
+	public void setExpenses(HashMap<String, Expense> expenses) {
+		expenses = expenses;
+	}
 
 	@Override
 	public String toString() {
 		return "User [name=" + name + ", age=" + age + ", userName=" + userName + ", password=" + password + ", email="
 				+ email + "]";
 	}
+
 	
 	
 	

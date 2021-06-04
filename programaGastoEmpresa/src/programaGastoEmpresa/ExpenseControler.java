@@ -25,7 +25,7 @@ public class ExpenseControler {public static void AppStarting() {
 			System.out.println(toCreate.getName() + " validate: " + userValidate);
 				
 			if(userValidate == true) {
-				ControllerMenuExpense.startExpense();
+				ControllerMenuExpense.startExpense(toCreate);
 			}
 			
 			break;
